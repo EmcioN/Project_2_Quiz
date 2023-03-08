@@ -15,12 +15,10 @@
     * [Colours](#colours)
     * [Structure](#structure)
   * [Features](#features)
-    * [Navigation Bar](#navigation-bar)
-    * [Main Section](#main-section)
-    * [Tips and Tricks Section](#tips-and-tricks-section)
-    * [Gallery Section](#gallery-section)
-    * [Download Section](#download-section)
-    * [Find Me Section](#find-me-section)
+    * [Play button](#play-button)
+    * [Progress Bar](#progress-bar)
+    * [Your score](#your-score)
+    * [Footer](#footer)    
   * [Tehnologies used](#tehnologies-used)
     * [Languages](#languages)
     * [Tools](#tools)
@@ -59,3 +57,33 @@ The Qume Gaiz Gaming Quiz is a great opportunity to test your knowledge about ga
 [Shantell Sans](https://fonts.google.com/specimen/Shantell+Sans) I will use this font in name of the quiz. Shantell Sans is a marker-style font built for creative expression that is why i like it.
 #### Icons
 I use [Font Awesome](https://fontawesome.com) icons because they're easy to use and look great. After adding them to the site, it became livelier and more attractive. Thanks to them, the website is easier to read. They are easy to understand, so they replace some descriptions.
+#### Colours
+On my website I used darker colors. I like dark themes. It's easier to read in the evening.
+* #343841 - This color will be used as a backgroung behind footer.
+* #455068 - This color will be used as a background behind question box.
+* #ffffff - This color will be used as a text colour.
+* #464952 - This color will be used as a background behind website if image wont load.
+#### Structure
+The site will work on small and large screens. Everything will scale accordingly.
+### Features
+#### Play button
+Button will start new game. You can play as many times as you want.
+#### Progress Bar
+It will contain a number of questions. We'll also know what question we're on.
+#### Your score
+You will be able to see the result of your quiz. Try to reach the maximum number of points.
+#### Footer 
+Located at the bottom of the page. You will find font awesome icons representing social media.
+### Tehnologies used
+#### Languages 
+* HTML
+* CSS
+* JavaScript
+#### libraries
+* Font Awesome
+* Google Fonts
+#### Tools
+* Gitpod
+* Github
+* W3C HTML Validation Service 
+* W3C CSS Validation Service
