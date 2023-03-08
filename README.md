@@ -44,3 +44,15 @@ The Qume Gaiz Gaming Quiz is a great opportunity to test your knowledge about ga
 ### Site owner Goals
 * Share the knowledge about the games.
 * Be able to check your knowledge about games.
+#### Requirements
+* Easy to navigate on various screen sizes.
+* Visually inviting.
+* True information.
+#### Expectations
+* I expect all buttons will work like expected.
+* I expect questions will provide true information.
+* I expect all links to social media sites to be opened in a new tab.
+* I expect to be able to see my score.
+### Design Choices
+#### Font
+[Open Sans](https://fonts.google.com/specimen/Open+Sans) is a clean and modern font that's perfect for any website. It's easy to read on screens of all sizes, making it ideal for web and mobile use.  
