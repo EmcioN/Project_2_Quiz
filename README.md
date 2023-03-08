@@ -55,4 +55,7 @@ The Qume Gaiz Gaming Quiz is a great opportunity to test your knowledge about ga
 * I expect to be able to see my score.
 ### Design Choices
 #### Font
-[Open Sans](https://fonts.google.com/specimen/Open+Sans) is a clean and modern font that's perfect for any website. It's easy to read on screens of all sizes, making it ideal for web and mobile use.  
+[Open Sans](https://fonts.google.com/specimen/Open+Sans) is a clean and modern font that's perfect for any website. It's easy to read on screens of all sizes, making it ideal for web and mobile use. 
+[Shantell Sans](https://fonts.google.com/specimen/Shantell+Sans) I will use this font in name of the quiz. Shantell Sans is a marker-style font built for creative expression that is why i like it.
+#### Icons
+I use [Font Awesome](https://fontawesome.com) icons because they're easy to use and look great. After adding them to the site, it became livelier and more attractive. Thanks to them, the website is easier to read. They are easy to understand, so they replace some descriptions.
