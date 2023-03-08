@@ -76,14 +76,26 @@ You will be able to see the result of your quiz. Try to reach the maximum number
 Located at the bottom of the page. You will find font awesome icons representing social media.
 ### Tehnologies used
 #### Languages 
-* HTML
-* CSS
-* JavaScript
+* HTML - Used to design the basic website.
+* CSS - Used to style the website and make it look more appealing.
+* JavaScript - Used to provide interactivity with player. 
 #### libraries
-* Font Awesome
-* Google Fonts
+* Font Awesome - Used for icons on the website.
+* Google Fonts - Used for text font on page. 
 #### Tools
-* Gitpod
-* Github
-* W3C HTML Validation Service 
-* W3C CSS Validation Service
+* Gitpod - Used for building the website.
+* Github - Used to deploy the project. 
+* W3C HTML Validation Service - Used to test HTML.
+* W3C CSS Validation Service - Used to test CSS.
+### Testing
+### Deployment  
+After the initial code had been committed and pushed to GitHub, it was time to deploy the project. This project was deployed using GitHub by the following steps.
+* Navigate to the repository on github and click **Settings**.
+* Select **Pages** on the side navigation.
+* Select the **None** dropdown, and then click **Main**.
+* Click on the **Save** button.
+* Now the website is now live on https://emcion.github.io/Project_2_Quiz/
+### Credits 
+#### For help, advice and insperation
+* [Simen Daehlin](https://github.com/Eventyret)
+#### For insperation and content.
