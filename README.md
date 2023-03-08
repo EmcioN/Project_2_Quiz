@@ -28,7 +28,7 @@
 
 ## UX
 ## Goal for the Project
-The Qume Gaiz Gaming Quiz is a great opportunity to test your knowledge about games. With it, you can answer questions about all your favorite titles, from action-adventure to sports. Questions cover a variety of topics related to games, such as strategy, history, characters and mechanics. This Gaming Quiz offers an enjoyable way to check your skills and learn more about some of the exciting games on the market today.
+ The Qume Gaiz Gaming Quiz is a great opportunity to test your knowledge about games. With it, you can answer questions about all your favorite titles, from action-adventure to sports. Questions cover a variety of topics related to games, such as strategy, history, characters and mechanics. This Gaming Quiz offers an enjoyable way to check your skills and learn more about some of the exciting games on the market today.
 ### User Goals
 * Visually appealing to attract more players.
 * Valuable content with true answers, to not confuse players.
@@ -53,27 +53,28 @@ The Qume Gaiz Gaming Quiz is a great opportunity to test your knowledge about ga
 * I expect to be able to see my score.
 ### Design Choices
 #### Font
-[Open Sans](https://fonts.google.com/specimen/Open+Sans) is a clean and modern font that's perfect for any website. It's easy to read on screens of all sizes, making it ideal for web and mobile use. 
-[Shantell Sans](https://fonts.google.com/specimen/Shantell+Sans) I will use this font in name of the quiz. Shantell Sans is a marker-style font built for creative expression that is why i like it.
+ [Open Sans](https://fonts.google.com/specimen/Open+Sans) is a clean and modern font that's perfect for any website. It's easy to read on screens of all sizes, making it ideal for web and mobile use. 
+ [Shantell Sans](https://fonts.google.com/specimen/Shantell+Sans) I will use this font in name of the quiz. Shantell Sans is a marker-style font built for creative expression that is why i like it.
 #### Icons
-I use [Font Awesome](https://fontawesome.com) icons because they're easy to use and look great. After adding them to the site, it became livelier and more attractive. Thanks to them, the website is easier to read. They are easy to understand, so they replace some descriptions.
+ I use [Font Awesome](https://fontawesome.com) icons because they're easy to use and look great. After adding them to the site, it became livelier and more attractive. Thanks to them, the website is easier to read. They are easy to understand, so they replace some descriptions.
 #### Colours
-On my website I used darker colors. I like dark themes. It's easier to read in the evening.
+ On my website I used darker colors. I like dark themes. It's easier to read in the evening.
 * #343841 - This color will be used as a backgroung behind footer.
 * #455068 - This color will be used as a background behind question box.
 * #ffffff - This color will be used as a text colour.
-* #464952 - This color will be used as a background behind website if image wont load.
+* #464952 - This color will be used as a background behind website if image 
+ wont load.
 #### Structure
-The site will work on small and large screens. Everything will scale accordingly.
+ The site will work on small and large screens. Everything will scale accordingly.
 ### Features
 #### Play button
-Button will start new game. You can play as many times as you want.
+ Button will start new game. You can play as many times as you want.
 #### Progress Bar
-It will contain a number of questions. We'll also know what question we're on.
+ It will contain a number of questions. We'll also know what question we're on.
 #### Your score
-You will be able to see the result of your quiz. Try to reach the maximum number of points.
+ You will be able to see the result of your quiz. Try to reach the maximum number of points.
 #### Footer 
-Located at the bottom of the page. You will find font awesome icons representing social media.
+ Located at the bottom of the page. You will find font awesome icons representing social media.
 ### Tehnologies used
 #### Languages 
 * HTML - Used to design the basic website.
@@ -88,8 +89,10 @@ Located at the bottom of the page. You will find font awesome icons representing
 * W3C HTML Validation Service - Used to test HTML.
 * W3C CSS Validation Service - Used to test CSS.
 ### Testing
+#### Html Validator
+#### Css Validator
 ### Deployment  
-After the initial code had been committed and pushed to GitHub, it was time to deploy the project. This project was deployed using GitHub by the following steps.
+ After the initial code had been committed and pushed to GitHub, it was time to deploy the project. This project was deployed using GitHub by the following steps.
 * Navigate to the repository on github and click **Settings**.
 * Select **Pages** on the side navigation.
 * Select the **None** dropdown, and then click **Main**.
