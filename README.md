@@ -35,3 +35,12 @@ The Qume Gaiz Gaming Quiz is a great opportunity to test your knowledge about ga
 * Visually appealing to attract more players.
 * Valuable content with true answers, to not confuse players.
 * Easily navigated to make it better experience.
+### User Stories
+* As a user, I want to check my knowledge about games.
+* As a user, I want to know my score.
+* As a user, I want to be able to restart the game. 
+* As a user, I want to be able to easily navigate through the website.
+* As a user, I want to know where I can find more information about creator.
+### Site owner Goals
+* Share the knowledge about the games.
+* Be able to check your knowledge about games.
