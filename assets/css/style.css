@@ -45,8 +45,7 @@ h3 {
 /* Container style and position */
 
 .box {
-  width: 100%;
-  max-width: 90rem;
+  width: 100%;  
   height: 100%;
   display: flex;
   justify-content: center;
