@@ -59,11 +59,10 @@
  I use [Font Awesome](https://fontawesome.com) icons because they're easy to use and look great. After adding them to the site, it became livelier and more attractive. Thanks to them, the website is easier to read. They are easy to understand, so they replace some descriptions.
 #### Colours
  On my website I used darker colors. I like dark themes. It's easier to read in the evening.
-* #343841 - This color will be used as a backgroung behind footer.
-* #455068 - This color will be used as a background behind question box.
+* #343841 - This color will be used as a backgroung behind containers.
+* #272d3b - This color will be used as borders
 * #ffffff - This color will be used as a text colour.
-* #464952 - This color will be used as a background behind website if image 
- wont load.
+* #464952 - This color will be used as a background behind website.
 #### Structure
  The site will work on small and large screens. Everything will scale accordingly.
 ### Features
@@ -75,6 +74,8 @@
  You will be able to see the result of your quiz. Try to reach the maximum number of points.
 #### Footer 
  Located at the bottom of the page. You will find font awesome icons representing social media.
+#### End Game Screen
+ You will be able to see your final result. You will be able to put your name on the scoreboard
 ### Tehnologies used
 #### Languages 
 * HTML - Used to design the basic website.
