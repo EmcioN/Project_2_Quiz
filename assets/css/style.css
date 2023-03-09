@@ -35,6 +35,7 @@ h2 {
   font-size: 4.2rem;
   font-weight: 700;
   margin-bottom: 4rem;
+  color: #ffffff;
 }
 h3 {
   font-size: 2.6rem;
@@ -95,7 +96,7 @@ h3 {
   box-shadow: none;  
 }
 
-/* Game HTML section */
+/* Game section */
 
 .answer-box {
   font-size: 1.6rem;
