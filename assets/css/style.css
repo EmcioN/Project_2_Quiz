@@ -110,6 +110,17 @@ h2 {
   color: #ffffff;
 }
 
+/* Progres bar */
+
+#progress-box{
+  display: block;  
+  justify-content: space-around;
+}
+.progress-center {
+  text-align: center;
+  color: #ffffff;  
+}
+ 
 /* End Game section */
 
 #name {

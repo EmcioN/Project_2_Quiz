@@ -28,7 +28,7 @@
 
 ## UX
 ## Goal for the Project
- The Qume Gaiz Gaming Quiz is a great opportunity to test your knowledge about games. With it, you can answer questions about all your favorite titles, from action-adventure to sports. Questions cover a variety of topics related to games, such as strategy, history, characters and mechanics. This Gaming Quiz offers an enjoyable way to check your skills and learn more about some of the exciting games on the market today.
+ The Gaming Quiz is a great opportunity to test your knowledge about games. With it, you can answer questions about all your favorite titles, from action-adventure to sports. Questions cover a variety of topics related to games, such as strategy, history, characters and mechanics. This Gaming Quiz offers an enjoyable way to check your skills and learn more about some of the exciting games on the market today.
 ### User Goals
 * Visually appealing to attract more players.
 * Valuable content with true answers, to not confuse players.
@@ -86,7 +86,7 @@
  ![quiz](/assets/images/footer.png)
 #### End Game Screen
  You will be able to see your final result. You will be able to put your name on the scoreboard
- 
+
  ![quiz](/assets/images/endgame.png)
 ### Tehnologies used
 #### Languages 

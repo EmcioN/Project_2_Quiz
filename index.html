@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A website with quiz about games">
-    <meta name="keywords" content="Quiz, Trivia, Gaming Quiz, Qume Gaiz Quiz">
-    <title>Qume Gaiz Gaming Quiz</title>
+    <meta name="keywords" content="Quiz, Trivia, Gaming Quiz">
+    <title>Gaming Quiz</title>
     <link href="assets/css/style.css" rel="stylesheet">    
 </head>
 <body>
@@ -20,17 +20,35 @@
   <div class="box">
     <div class="position-center position-column">
       <h1>Gaming Quiz</h1>
-      <a href="#game" class="button" onclick="location.href='#game' aria-label="Play">Play</a>
-      <a href="#score" class="button" onclick="location.href='#score' aria-label="Your Score">Your Scores</a>
+      <a href="#game" class="button" onclick="location.href='#game'" aria-label="Play">Play</a>
+      <a href="#score" class="button" onclick="location.href='#score'" aria-label="Your Score">Your Scores</a>
     </div>
   </div>
 </section>
 
   <!--Game section-->
 
-  <section id="game">
-  <div class="box">    
+  <section id="game">  
+  <div class="box">        
     <div class="position-center position-column">
+      <div id="progress-box">
+       <div class="progress-center">
+        <p>
+          Question
+        </p>
+        <h2 >
+          1/10        
+        </h2>
+       </div>
+       <div class="progress-center">
+        <p>
+          Score
+        </p>
+        <h2 class="progress-number">
+          0
+        </h2>
+       </div>
+      </div>
         <h2 id="question">
             Mark the correct answer
         </h2>
