@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Shantell+Sans:ital@0;1&display=swap');
 * {    
   box-sizing: border-box;         
-  }
+}
 
 html {
   font-size: 62.5%;
   height: 100%;
   width: 100%;      
-  }
+}
   
 body {
   font-family:'Open Sans', sans-serif;
@@ -16,43 +16,88 @@ body {
   background-image: url("../images/quiz.jp");    
   margin: 0;
   padding: 0;        
-  }
+}
 
-  h1, h2, h3, h4 {
-    margin-bottom: 1.2rem;
-  }
-  h1 {
-    font-size: 5.2rem;
-    color:#ffffff;
-    margin-bottom: 5rem;
-  }
-  h1 > span {
-    font-size: 2.2rem;
-    font-weight: 500;
-  }
-  h2 {
-    font-size: 4.2rem;
-    font-weight: 700;
-    margin-bottom: 4rem;
-  }
-  h3 {
-    font-size: 2.6rem;
-    font-weight: 500;
-  }
-  .box {
-    width: 100%;
-    max-width: 90rem;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+h1, h2, h3, h4 {
+  margin-bottom: 1.2rem;
+  font-family: 'Shantell Sans';
+}
+h1 {
+  font-size: 5.2rem;
+  color:#ffffff;
+  margin-bottom: 5rem;
+}
+h1 > span {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+h2 {
+  font-size: 4.2rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+}
+h3 {
+  font-size: 2.6rem;
+  font-weight: 500;
+}
 
+/* Container style and position */
 
+.box {
+  width: 100%;
+  max-width: 90rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.position-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.position-center {
+  justify-content: center;
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Button */
+
+.button {
+  font-size: 1.6rem;
+  font-family: 'Shantell Sans';
+  width: 20rem;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #343841;
+  border: .1rem solid #343841;
+  padding: 1rem 0;
+  margin-bottom: .9rem;
+}
+.button:hover {
+  box-shadow: 0 0.5rem 1.5rem 0 rgba(50, 51, 51, 0.3);
+  cursor: pointer;
+}
+.button[disabled]:hover {
+  cursor: not-allowed;
+  box-shadow: none;  
+}
 
   /* Footer section */
 
-  #footer {
+#footer {
   background-color: #343841;
   height: 10rem;
   width: 100%;  
@@ -60,13 +105,13 @@ body {
   padding: 2rem;
   text-align:center;
   margin: 0;     
- }
+}
 
- #footer a {
+#footer a {
   text-decoration: none;
   color:#ffffff;
- }
+}
 
- #footer a:hover {
+#footer a:hover {
   text-transform: uppercase;
- }
+}
