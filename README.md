@@ -68,14 +68,26 @@
 ### Features
 #### Play button
  Button will start new game. You can play as many times as you want.
+
+ ![play](/assets/images/playbutton.png)
+#### Question section
+ Here you will find a question with four possible answers. Only one is correct. We choose the answer by clicking on it
+
+ ![quiz](/assets/images/question.png)
 #### Progress Bar
  It will contain a number of questions. We'll also know what question we're on.
 #### Your score
  You will be able to see the result of your quiz. Try to reach the maximum number of points.
+
+ ![quiz](/assets/images/yourscore.png)
 #### Footer 
  Located at the bottom of the page. You will find font awesome icons representing social media.
+
+ ![quiz](/assets/images/footer.png)
 #### End Game Screen
  You will be able to see your final result. You will be able to put your name on the scoreboard
+ 
+ ![quiz](/assets/images/endgame.png)
 ### Tehnologies used
 #### Languages 
 * HTML - Used to design the basic website.

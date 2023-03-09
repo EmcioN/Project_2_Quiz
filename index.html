@@ -16,18 +16,21 @@
   <div id="quiz-logo">
     <img src="assets/images/quiz.jpg" alt="Quiz Logo">
   </div>
+<section id="main">
   <div class="box">
-    <div id="main" class="position-center position-column">
+    <div class="position-center position-column">
       <h1>Gaming Quiz</h1>
-      <a class="button" href="#game" aria-label="Play">Play</a>
-      <a class="button" href="#score" aria-label="Your Score">Your Scores</a>
+      <a href="#game" class="button" onclick="location.href='#game' aria-label="Play">Play</a>
+      <a href="#score" class="button" onclick="location.href='#score' aria-label="Your Score">Your Scores</a>
     </div>
   </div>
+</section>
 
   <!--Game section-->
 
+  <section id="game">
   <div class="box">    
-    <div id="game" class="position-center position-column">
+    <div class="position-center position-column">
         <h2 id="question">
             Mark the correct answer
         </h2>
@@ -65,25 +68,28 @@
         </div>        
     </div>
    </div>
+  </section>
 
    <!-- End Game section-->
-   
+  
+  <section id="end-game"> 
   <div class="box">
-    <div id="end-game" class="position-center position-column">
+    <div class="position-center position-column">
       <h2>Your Score is</h2>
       <h2 id="your-score">
         0
       </h2>
       <a class="button" href="#game" aria-label="Play again">Play again</a>
-      <a class="button" href="#score" aria-label="Your Score">Your Scores</a> 
-    </div>
-    <form>
+      <a class="button" href="#score" aria-label="Your Score">Your Scores</a>
+      <form>
       <input type="text" name="name" id="name" placeholder="Your Name">
       <button type="submit" class="button">
         Submit
       </button> 
-    </form>    
+      </form> 
+    </div>        
   </div>
+  </section>
 
   <!-- Footer section-->
 
@@ -107,5 +113,8 @@
 
   <script src="https://kit.fontawesome.com/d40136166e.js" crossorigin="anonymous"></script>
 
+  <!-- Javascript -->
+
+  <script src="assets/js/script.js" defer></script>
 </body>
 </html>
