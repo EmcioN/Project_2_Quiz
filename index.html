@@ -21,7 +21,7 @@
     <div class="position-center position-column">
       <h1>Gaming Quiz</h1>
       <a href="#game" class="button" aria-label="Play">Play</a>
-      <a href="#score" class="button" aria-label="Your Score">Your Scores</a>
+      <a href="#scores" class="button" aria-label="Your Scores">Your Scores</a>
     </div>
   </div>
 </section>
@@ -99,10 +99,10 @@
         0
       </h2>
       <a class="button" href="#game" aria-label="Play again">Play again</a>
-      <a class="button" href="#score" aria-label="Your Score">Your Scores</a>
+      <a class="button" href="#scores" aria-label="Your Score">Your Scores</a>
       <form>
       <input type="text" name="name" id="name" placeholder="Your Name">
-      <button type="submit" class="button">
+      <button type="submit" class="button" href="#scores">
         Submit
       </button> 
       </form> 
@@ -112,12 +112,12 @@
 
   <!-- Score Section-->
 
-  <section id="score">
+  <section id="scores" class="hidden">
     <div class="box">
       <div id="high-scores" class="position-center position-column">
         <h1>Your Score</h1>
         <ul id="high-scores-list"></ul>
-        <a class="button" href="/">Go Home</a>
+        <a class="button" href="#main" aria-label="Home">Home</a>
       </div>
     </div>
   </section>
