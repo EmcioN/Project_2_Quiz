@@ -131,6 +131,18 @@ h2 {
   height: 4.5rem;
 }
 
+/* Score section */
+
+.high-scores {
+  font-size: 2.5rem;
+  margin-bottom: .5rem;
+}
+#high-scores-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 3rem;
+}
+
 /* Footer section */
 
 #footer {

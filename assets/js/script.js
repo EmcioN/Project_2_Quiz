@@ -18,4 +18,14 @@ playAgainButton.addEventListener('click', () => {
     endGameSection.style.display = 'none';
     mainSection.style.display = 'flex';
     gameSection.style.display = 'none';
-  });  
+  });
+
+// Questions
+
+
+let questions = [];
+
+fetch(
+  "https://opentdb.com/api.php?amount=10&category=15&difficulty=medium&type=multiple"
+);
+
