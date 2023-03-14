@@ -1,4 +1,3 @@
-
 const question = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName('answer-text'));
 const questionNumber = document.getElementById('question-number');
@@ -8,8 +7,8 @@ let takingAnswer = false;
 let score = 0;
 let questionCounter = 0;
 let availableQuesions = [];
-const correctPoint = 10;
-const maxQuestion = 5;
+const points = 10;
+const maxQuestion = 2;
 
 
 fetch(
@@ -40,21 +39,21 @@ fetch(
         startGame();
     })
     .catch((err) => {
-        console.error(Error);
+        console.error(err);
     });
 
 
 
 startGame = () => {
     questionCounter = 0;
-    score = 0;    
-    availableQuesions = [...questions];
-    return getNewQuestion();
+    score = 0;          
+    availableQuesions = [...questions];    
+    getNewQuestion();    
 };
 
 getNewQuestion = () => {
     if (availableQuesions.length === 0 || questionCounter >= maxQuestion) {
-        localStorage.setItem('mostRecentScore', score);        
+        localStorage.setItem('lastScore', score);        
         window.location.hash = ('#end-game');
         document.getElementById('end-game').style.display = 'flex';
         document.getElementById('game').style.display = 'none';
@@ -62,10 +61,25 @@ getNewQuestion = () => {
     }
     questionCounter++;
     questionNumber.innerText = `Question ${questionCounter}/${maxQuestion}`;
-    
+
     const questionIndex = Math.floor(Math.random() * availableQuesions.length);
-    currentQuestion = availableQuesions[questionIndex];
-    question.innerText = currentQuestion.question;
+    currentQuestion = availableQuesions[questionIndex]; 
+
+    question.innerHTML = currentQuestion.question.replace(/(&#039;)|(&apos;)|(&quot;)|(&lt;)|(&gt;)/g, function(match) {
+    switch(match) {
+        case "&#039;":
+        case "&apos;":
+        return "'";
+        case "&quot;":
+        return '"';
+        case "&lt;":
+        return "<";
+        case "&gt;":
+        return ">";
+        default:
+        return match;
+    }
+});
 
     choices.forEach((choice) => {
         const number = choice.dataset['number'];
@@ -88,7 +102,7 @@ choices.forEach((choice) => {
             selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
 
         if (classToAdd === 'correct') {
-            incrementScore(correctPoint);
+            incrementScore(points);
         }
 
         selectedChoice.parentElement.classList.add(classToAdd);

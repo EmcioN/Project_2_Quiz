@@ -10,12 +10,14 @@
     <link href="assets/css/style.css" rel="stylesheet">    
 </head>
 <body>
+  <header>
+    <div id="quiz-logo">
+      <img src="assets/images/quiz.jpg" alt="Quiz Logo">
+    </div>
+  </header>
 
-  <!--Main section-->
+  <!--Main section-->  
   
-  <div id="quiz-logo">
-    <img src="assets/images/quiz.jpg" alt="Quiz Logo">
-  </div>
 <section id="main">
   <div class="box">
     <div class="position-center position-column">
@@ -96,13 +98,13 @@
     <div class="position-center position-column">
       <h2>Your Score is</h2>
       <h2 id="your-score">
-        0
+        
       </h2>
       <a id="play-again" class="button" href="#game" aria-label="Play again">Play again</a>
       <a class="button" href="#scores" aria-label="Your Score">Your Scores</a>
       <form>
       <input type="text" name="name" id="name" placeholder="Your Name">
-      <button type="submit" class="button" href="#scores" onclick="saveHighScore(event)">
+      <button type="submit" class="button" href="#scores" onclick="saveScore(event)">
         Submit
       </button> 
       </form> 

@@ -13,6 +13,7 @@ const scoreSection = document.getElementById('scores');
 playButton.addEventListener('click', () => {
     mainSection.style.display = 'none';
     gameSection.style.display = 'flex';
+    startGame();
   });
 endGameButton.addEventListener('click', () => {    
     gameSection.style.display = 'none';
@@ -20,7 +21,7 @@ endGameButton.addEventListener('click', () => {
   });
 playAgainButton.addEventListener('click', () => {    
     endGameSection.style.display = 'none';
-    mainSection.style.display = 'flex';
+    gameSection.style.display = 'flex';
     startGame();        
   });
 scoreButton.addEventListener('click', () => {

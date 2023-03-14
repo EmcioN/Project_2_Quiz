@@ -1,20 +1,20 @@
 const username = document.getElementById('name');
 const submitButton = document.querySelector('.button[type="submit"]');
 const finalScore = document.getElementById('your-score');
-const mostRecentScore = localStorage.getItem('mostRecentScore');
+const lastScore = localStorage.getItem('lastScore');
 const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 const maxScores = 8;
-finalScore.innerText = mostRecentScore;
+finalScore.innerText = lastScore;
 
 username.addEventListener('keyup', () => {
   submitButton.disabled = !username.value;
 });  
 
-saveHighScore = (e) => {
+saveScore = (e) => {
     e.preventDefault();
 
     const score = {
-        score: mostRecentScore,
+        score: lastScore,
         name: username.value,
     };
     highScores.push(score);
