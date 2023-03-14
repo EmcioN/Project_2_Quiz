@@ -9,6 +9,7 @@ const gameSection = document.getElementById('game');
 const endGameSection = document.getElementById('end-game');
 const scoreSection = document.getElementById('scores');
 
+
 playButton.addEventListener('click', () => {
     mainSection.style.display = 'none';
     gameSection.style.display = 'flex';
@@ -17,9 +18,10 @@ endGameButton.addEventListener('click', () => {
     gameSection.style.display = 'none';
     endGameSection.style.display = 'flex';
   });
-playAgainButton.addEventListener('click', () => {
+playAgainButton.addEventListener('click', () => {    
     endGameSection.style.display = 'none';
-    mainSection.style.display = 'flex';    
+    mainSection.style.display = 'flex';
+    startGame();        
   });
 scoreButton.addEventListener('click', () => {
     endGameSection.style.display = 'none';

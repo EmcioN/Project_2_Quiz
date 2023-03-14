@@ -8,14 +8,15 @@ let takingAnswer = false;
 let score = 0;
 let questionCounter = 0;
 let availableQuesions = [];
-
+const correctPoint = 10;
+const maxQuestion = 5;
 
 
 fetch(
     'https://opentdb.com/api.php?amount=10&category=15&type=multiple'
 )
-    .then((res) => {
-        return res.json();
+    .then((result) => {
+        return result.json();
     })
     .then((loadedQuestions) => {
         questions = loadedQuestions.results.map((loadedQuestion) => {
@@ -42,12 +43,11 @@ fetch(
         console.error(Error);
     });
 
-const correctPoint = 10;
-const maxQuestion = 5;
+
 
 startGame = () => {
     questionCounter = 0;
-    score = 0;
+    score = 0;    
     availableQuesions = [...questions];
     return getNewQuestion();
 };

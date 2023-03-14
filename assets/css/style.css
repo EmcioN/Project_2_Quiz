@@ -117,6 +117,9 @@ h2 {
 .incorrect {
   background-color: #bb0505;
 }
+#question {
+  font-family:'Open Sans', sans-serif;
+}
 
 /* Progres bar */
 
