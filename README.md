@@ -109,7 +109,21 @@
 * [Devtools](https://developer.chrome.com/docs/devtools/#:~:text=Chrome%20DevTools%20is%20a%20set,you%20can%20open%20Chrome%20DevTools.) - I checked all the time how my code works and if there are any errors in console
 ### Testing
 #### Html Validator
+I had no major problems with html. The code itself is not complicated, so it wasn't that difficult.
+I made a mistake adding href attribute to button. The W3 validator picked it up quickly. I removed unnecessary text and got rid of the error.
+
+![html Error](/assets/images/htmlvalidationerr.png)
+
+After another test, I did not encounter any errors
+
+![html](/assets/images/htmlgood.png)
+
 #### Css Validator
+With css it was very similar to html. Nothing complicated is included in it. The entire file seems to apply the style to the page well. The code is commented out for easier reading. Any changes can be made very quickly and easily.
+I did a lot of things by trial and error. Thanks to the first project, I achieved my goal very quickly.
+
+![Css](/assets/images/cssvalidation.png)
+
 ### Deployment  
  After the initial code had been committed and pushed to GitHub, it was time to deploy the project. This project was deployed using GitHub by the following steps.
 * Navigate to the repository on github and click **Settings**.
