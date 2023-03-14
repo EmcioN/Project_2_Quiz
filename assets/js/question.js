@@ -1,3 +1,5 @@
+/*jshint sub:true*/
+/*jshint esversion: 6 */
 const question = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName('answer-text'));
 const questionNumber = document.getElementById('question-number');
@@ -57,7 +59,7 @@ getNewQuestion = () => {
         window.location.hash = ('#end-game');
         document.getElementById('end-game').style.display = 'flex';
         document.getElementById('game').style.display = 'none';
-        return 
+        return; 
     }
     questionCounter++;
     questionNumber.innerText = `Question ${questionCounter}/${maxQuestion}`;

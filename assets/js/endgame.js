@@ -1,9 +1,10 @@
+/*jshint sub:true*/
+/*jshint esversion: 6 */
 const username = document.getElementById('name');
 const submitButton = document.querySelector('.button[type="submit"]');
 const finalScore = document.getElementById('your-score');
 const lastScore = localStorage.getItem('lastScore');
 const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
-const maxScores = 8;
 finalScore.innerText = lastScore;
 
 username.addEventListener('keyup', () => {

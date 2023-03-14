@@ -1,3 +1,5 @@
+/*jshint sub:true*/
+/*jshint esversion: 6 */
 const scoresList = document.getElementById("high-scores-list");
 
 scoresList.innerHTML = highScores

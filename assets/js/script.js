@@ -1,3 +1,5 @@
+/*jshint sub:true*/
+/*jshint esversion: 6 */
 const playButton = document.querySelector('.button[aria-label="Play"]');
 const endGameButton = document.querySelector('.button[aria-label="End game"]');
 const playAgainButton = document.querySelector('.button[aria-label="Play again"]');

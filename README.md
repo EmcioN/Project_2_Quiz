@@ -107,6 +107,7 @@
 * [W3C HTML Validation Service](https://validator.w3.org/) - Used to test HTML.
 * [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) - Used to test CSS.
 * [Devtools](https://developer.chrome.com/docs/devtools/#:~:text=Chrome%20DevTools%20is%20a%20set,you%20can%20open%20Chrome%20DevTools.) - I checked all the time how my code works and if there are any errors in console
+* [JSHint](https://jshint.com/) - Used to test my java script if there is any mistakes.
 ### Testing
 #### Html Validator
 I had no major problems with html. The code itself is not complicated, so it wasn't that difficult.
@@ -123,6 +124,34 @@ With css it was very similar to html. Nothing complicated is included in it. The
 I did a lot of things by trial and error. Thanks to the first project, I achieved my goal very quickly.
 
 ![Css](/assets/images/cssvalidation.png)
+
+#### JSHint
+I had a lot of warnings in the beginning. Most of them had the same problem. When relying upon ECMAScript 6 features I need to inform the program so JSHint doesn't raise unnecessary warnings. I added a line of code to the beginning of the js file that fixed the warning. I found the answer on stack overflow. 
+
+ /*jshint esversion: 6 */
+
+![js warnings](/assets/images/javascriptwarnings.png)
+
+I had a missing semicolon. That was easy to fix by adding it in the right place.
+
+![js warnings](/assets/images/jshintwar.png)
+
+I got a warning that ['number'] is better written in dot notation. I also looked for a solution on stack overflow. The solution was as easy as in the previous case. I added lines of code and got rid of the warnings
+
+![jshint](/assets/images/jshintnowar.png)
+
+##### Manual Testing
+Just writing the function was a challenge for me. Most things were done by trial and error. One of the problems that took me a long time was the lack of answers displayed. They were undefined. 
+
+![err](/assets/images/answerundefined.png)
+
+I changed the code in different ways. Nothing seemed to help. Eight hours later, with the help of google, I noticed that I forgot to add the data number in html. I managed to fix this error.
+
+![datanumber](/assets/images/datanumber.png)
+
+Some characters in the question body were displayed incorrectly. I added text formatting. Thanks to tutorials on youtube, I dealt with the error and the questions are now displayed correctly.
+
+![datanumber](/assets/images/questiongood.png)
 
 ### Deployment  
  After the initial code had been committed and pushed to GitHub, it was time to deploy the project. This project was deployed using GitHub by the following steps.
