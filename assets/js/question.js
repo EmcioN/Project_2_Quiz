@@ -8,7 +8,7 @@ let score = 0;
 let questionCounter = 0;
 let availableQuesions = [];
 const points = 10;
-const maxQuestion = 2;
+const maxQuestion = 10;
 
 
 fetch(

@@ -73,34 +73,40 @@
 #### Question section
  Here you will find a question with four possible answers. Only one is correct. We choose the answer by clicking on it
 
- ![quiz](/assets/images/question.png)
+ ![question](/assets/images/question.png)
 #### Progress Bar
  It will contain a number of questions. We'll also know what question we're on.
-#### Your score
- You will be able to see the result of your quiz. Try to reach the maximum number of points.
+ Also you will see your current score.
 
- ![quiz](/assets/images/yourscore.png)
+ ![progress](/assets/images/progressbar.png)
+#### Your score
+ You will be able to see the result of your quiz. Try to reach the maximum number of points. Home button will take you to main section.
+
+ ![score](/assets/images/yourscore.png)
+
+ ![scorelist](/assets/images/scoresection.png)
 #### Footer 
  Located at the bottom of the page. You will find font awesome icons representing social media.
 
- ![quiz](/assets/images/footer.png)
+ ![footer](/assets/images/footer.png)
 #### End Game Screen
  You will be able to see your final result. You will be able to put your name on the scoreboard
 
- ![quiz](/assets/images/endgame.png)
+ ![endgame](/assets/images/endgame.png)
 ### Tehnologies used
 #### Languages 
 * HTML - Used to design the basic website.
 * CSS - Used to style the website and make it look more appealing.
 * JavaScript - Used to provide interactivity with player. 
 #### libraries
-* Font Awesome - Used for icons on the website.
-* Google Fonts - Used for text font on page. 
+* [Font Awesome](https://fontawesome.com) - Used for icons on the website.
+* [Google fonts](https://fonts.google.com) - Used for text font on page. 
 #### Tools
-* Gitpod - Used for building the website.
-* Github - Used to deploy the project. 
-* W3C HTML Validation Service - Used to test HTML.
-* W3C CSS Validation Service - Used to test CSS.
+* [Gitpod](https://gitpod.io/workspaces) - Used for building the website.
+* [Github](https://github.com/) - Used to deploy the project. 
+* [W3C HTML Validation Service](https://validator.w3.org/) - Used to test HTML.
+* [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) - Used to test CSS.
+* [Devtools](https://developer.chrome.com/docs/devtools/#:~:text=Chrome%20DevTools%20is%20a%20set,you%20can%20open%20Chrome%20DevTools.) - I checked all the time how my code works and if there are any errors in console
 ### Testing
 #### Html Validator
 #### Css Validator
@@ -113,5 +119,13 @@
 * Now the website is now live on https://emcion.github.io/Project_2_Quiz/
 ### Credits 
 #### For help, advice and insperation
-* [Simen Daehlin](https://github.com/Eventyret)
-#### For insperation and content.
+
+I would like to thank the love maths project and the many tutorials on youtube. I wouldn't have made it without them. With a deeper look at the code. Now it's much easier for me to understand how it all works.
+
+[Stackoverflow](https://stackoverflow.com/) was also very helpful. There you can find a solution with an explanation to most problems.
+
+[W3school](https://www.w3schools.com/) is another place where I was looking for information. Everything is nicely explained and you can test it yourself.
+
+Of course, the greatest support I received was from my mentor. Many thanks to him.
+
+[Simen Daehlin](https://github.com/Eventyret)
