@@ -56,7 +56,7 @@
             <p class="answer-number">
                 1
             </p>
-            <p class="answer-text">
+            <p class="answer-text" data-number="1">
                 Answer text
             </p>
         </div>
@@ -64,7 +64,7 @@
             <p class="answer-number">
                 2
             </p>
-            <p class="answer-text">
+            <p class="answer-text" data-number="2">
                 Answer text
             </p>
         </div>
@@ -72,7 +72,7 @@
             <p class="answer-number">
                 3
             </p>
-            <p class="answer-text">
+            <p class="answer-text" data-number="3">
                 Answer text
             </p>
         </div>
@@ -80,7 +80,7 @@
             <p class="answer-number">
                 4
             </p>
-            <p class="answer-text">
+            <p class="answer-text" data-number="4">
                 Answer text
             </p>
         </div>
@@ -102,7 +102,7 @@
       <a class="button" href="#scores" aria-label="Your Score">Your Scores</a>
       <form>
       <input type="text" name="name" id="name" placeholder="Your Name">
-      <button type="submit" class="button" href="#scores">
+      <button type="submit" class="button" href="#scores" onclick="saveHighScore(event)">
         Submit
       </button> 
       </form> 
@@ -147,5 +147,8 @@
   <!-- Javascript -->
 
   <script src="assets/js/script.js" defer></script>
+  <script src="assets/js/question.js" defer></script>
+  <script src="assets/js/endgame.js" defer></script>
+  <script src="assets/js/score.js" defer></script>
 </body>
 </html>
