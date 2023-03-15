@@ -55,7 +55,8 @@
 * I expect to be able to see my score.
 ### Design Choices
 #### Font
- [Open Sans](https://fonts.google.com/specimen/Open+Sans) is a clean and modern font that's perfect for any website. It's easy to read on screens of all sizes, making it ideal for web and mobile use. 
+ [Open Sans](https://fonts.google.com/specimen/Open+Sans) is a clean and modern font that's perfect for any website. It's easy to read on screens of all sizes, making it ideal for web and mobile use.
+  
  [Shantell Sans](https://fonts.google.com/specimen/Shantell+Sans) I will use this font in name of the quiz. Shantell Sans is a marker-style font built for creative expression that is why i like it.
 #### Icons
  I use [Font Awesome](https://fontawesome.com) icons because they're easy to use and look great. After adding them to the site, it became livelier and more attractive. Thanks to them, the website is easier to read. They are easy to understand, so they replace some descriptions.
@@ -141,6 +142,10 @@ I had a missing semicolon. That was easy to fix by adding it in the right place.
 I got a warning that ['number'] is better written in dot notation. I also looked for a solution on stack overflow. The solution was as easy as in the previous case. I added lines of code and got rid of the warnings
 
 ![jshint](/assets/images/jshintnowar.png)
+
+PageSpeed ​​Insights showed nothing alarming. I just had to add height and width to the logo image. This is the result.
+
+![page speed](/assets/images/pagespeed.png)
 
 #### Manual Testing
 Just writing the function was a challenge for me. Most things were done by trial and error. One of the problems that took me a long time was the lack of answers displayed. They were undefined. 
