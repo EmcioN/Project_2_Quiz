@@ -3,7 +3,7 @@
 const question = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName('answer-text'));
 const questionNumber = document.getElementById('question-number');
-const scoreNumber = document.getElementsByClassName('score');
+let scoreNumber = document.getElementsByClassName('score');
 let currentQuestion = {};
 let takingAnswer = false;
 let score = 0;
@@ -47,8 +47,8 @@ fetch(
 
 
 startGame = () => {
-    questionCounter = 0;
-    score = 0;          
+    questionCounter = 0;    
+    score = 0;              
     availableQuesions = [...questions];    
     getNewQuestion();    
 };

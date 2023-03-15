@@ -19,7 +19,7 @@ playButton.addEventListener('click', () => {
   });
 endGameButton.addEventListener('click', () => {    
     gameSection.style.display = 'none';
-    endGameSection.style.display = 'flex';
+    endGameSection.style.display = 'flex';    
     startGame();
   });
 playAgainButton.addEventListener('click', () => {    
@@ -42,6 +42,7 @@ yourScoreButton.addEventListener('click', () => {
 homeButton.addEventListener('click', () => {    
     mainSection.style.display = 'flex';    
     scoreSection.style.display = 'none';
+    startGame();
   });    
 
 

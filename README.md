@@ -160,8 +160,11 @@ Some characters in the question body were displayed incorrectly. I added text fo
 
 ![datanumber](/assets/images/questiongood.png)
 
-#### Bugs
-I still have a problem with the incorrect display of the final result. The number of points is correct, but it is from the previous game, not from the current one. I checked the paths, they seem to be correct. The last score fetches data from the local clipboard called lastscore.
+I had a problem with the wrong score displayed in the final score. The score was from the previous game. If this was your first game, the score field was blank. I was wondering what to do for a long time, until I finally noticed that the final score is not updated often enough. I added an update to the final score to the getNewQuestion function.
+
+![scorefix](/assets/images/scorefix.png)
+
+I tested the game itself. There were a lot of tests, in different ways. Questions load correctly. The answers are also loading and only one answer is correct. Points for correct answers are calculated correctly. The question number changes according to the one you are currently on.
 
 ### Deployment  
  After the initial code had been committed and pushed to GitHub, it was time to deploy the project. This project was deployed using GitHub by the following steps.
