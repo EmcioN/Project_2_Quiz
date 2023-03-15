@@ -20,6 +20,7 @@ playButton.addEventListener('click', () => {
 endGameButton.addEventListener('click', () => {    
     gameSection.style.display = 'none';
     endGameSection.style.display = 'flex';
+    startGame();
   });
 playAgainButton.addEventListener('click', () => {    
     endGameSection.style.display = 'none';

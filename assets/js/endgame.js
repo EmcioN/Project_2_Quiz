@@ -3,7 +3,7 @@
 const username = document.getElementById('name');
 const submitButton = document.querySelector('.button[type="submit"]');
 const finalScore = document.getElementById('your-score');
-const lastScore = localStorage.getItem('lastScore');
+let lastScore = localStorage.getItem('lastScore');
 const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 finalScore.innerText = lastScore;
 
