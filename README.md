@@ -1,4 +1,4 @@
-# Qume Gaiz Gaming Quiz
+# Gaming Quiz
 ![quiz](/assets/images/quiz.jpg)
 
 ## Table of Contents
@@ -140,7 +140,7 @@ I got a warning that ['number'] is better written in dot notation. I also looked
 
 ![jshint](/assets/images/jshintnowar.png)
 
-##### Manual Testing
+#### Manual Testing
 Just writing the function was a challenge for me. Most things were done by trial and error. One of the problems that took me a long time was the lack of answers displayed. They were undefined. 
 
 ![err](/assets/images/answerundefined.png)
@@ -152,6 +152,9 @@ I changed the code in different ways. Nothing seemed to help. Eight hours later,
 Some characters in the question body were displayed incorrectly. I added text formatting. Thanks to tutorials on youtube, I dealt with the error and the questions are now displayed correctly.
 
 ![datanumber](/assets/images/questiongood.png)
+
+#### Bugs
+I still have a problem with the incorrect display of the final result. The number of points is correct, but it is from the previous game, not from the current one. I checked the paths, they seem to be correct. The last score fetches data from the local clipboard called lastscore.
 
 ### Deployment  
  After the initial code had been committed and pushed to GitHub, it was time to deploy the project. This project was deployed using GitHub by the following steps.
