@@ -184,3 +184,12 @@ h2 {
 #footer a:hover {
   text-transform: uppercase;
 }
+
+/* Media */
+
+@media (max-width: 500px) {
+  #quiz-logo-img {
+    height: 20rem;
+    width: 30rem;
+  }
+}
