@@ -56,7 +56,8 @@ startGame = () => {
 getNewQuestion = () => {
     if (availableQuesions.length === 0 || questionCounter >= maxQuestion) {
         localStorage.setItem('lastScore', score);
-        lastScore = score;        
+        lastScore = score;
+        finalScore.innerText = score;        
         window.location.hash = ('#end-game');
         document.getElementById('end-game').style.display = 'flex';
         document.getElementById('game').style.display = 'none';
