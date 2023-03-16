@@ -1,27 +1,27 @@
 /*jshint sub:true*/
 /*jshint esversion: 6 */
-const playButton = document.querySelector('.button[aria-label="Play"]');
-const endGameButton = document.querySelector('.button[aria-label="End game"]');
-const playAgainButton = document.querySelector('.button[aria-label="Play again"]');
-const homeButton = document.querySelector('.button[aria-label="Home"]');
-const scoreButton = document.querySelector('.button[aria-label="Your Score"]');
-const yourScoreButton = document.querySelector('.button[aria-label="Your Scores"]');
-const mainSection = document.getElementById('main');
-const gameSection = document.getElementById('game');
-const endGameSection = document.getElementById('end-game');
-const scoreSection = document.getElementById('scores');
-const question = document.getElementById('question');
-const choices = Array.from(document.getElementsByClassName('answer-text'));
-const choicesBox = Array.from(document.getElementsByClassName('answer-box'));
-const questionNumber = document.getElementById('question-number');
-const scoreNumber = document.getElementsByClassName('score');
+const playButtonRef = document.querySelector('.button[aria-label="Play"]');
+const endGameButtonRef = document.querySelector('.button[aria-label="End game"]');
+const playAgainButtonRef = document.querySelector('.button[aria-label="Play again"]');
+const homeButtonRef = document.querySelector('.button[aria-label="Home"]');
+const scoreButtonRef = document.querySelector('.button[aria-label="Your Score"]');
+const yourScoreButtonRef = document.querySelector('.button[aria-label="Your Scores"]');
+const mainSectionRef = document.querySelector('#main');
+const gameSectionRef = document.querySelector('#game');
+const endGameSectionRef = document.querySelector('#end-game');
+const scoreSectionRef = document.querySelector('#scores');
+const question = document.querySelector('#question');
+const username = document.querySelector('#name');
+const finalScore = document.querySelector('#your-score');
+const scoresList = document.querySelector("#high-scores-list");
+const questionNumber = document.querySelector('#question-number');
+const submitButton = document.querySelector('.button[type="submit"]');
+const scoreNumber = document.querySelectorAll('.score');
+const choices = Array.from(document.querySelectorAll('.answer-text'));
+const choicesBox = Array.from(document.querySelectorAll('.answer-box'));
+const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 const points = 10;
 const maxQuestion = 10;
-const username = document.getElementById('name');
-const submitButton = document.querySelector('.button[type="submit"]');
-const finalScore = document.getElementById('your-score');
-const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
-const scoresList = document.getElementById("high-scores-list");
 
 let lastScore = localStorage.getItem('lastScore');
 let currentQuestion = {};
@@ -30,6 +30,9 @@ let score = 0;
 let questionCounter = 0;
 let availableQuesions = [];
 
+/**
+ * Reset question counter and score then load new question.
+ */
 const startGame = () => {
   questionCounter = 0;    
   score = 0;              
@@ -37,14 +40,16 @@ const startGame = () => {
   getNewQuestion();    
 };
 
+/**
+ * Load new question with answers for the user
+ */
 const getNewQuestion = () => {
-  if (availableQuesions.length === 0 || questionCounter >= maxQuestion) {
-      localStorage.setItem('lastScore', score);
+  if (availableQuesions.length === 0 || questionCounter >= maxQuestion) {      
       lastScore = score;
       finalScore.innerText = score;        
       window.location.hash = ('#end-game');
-      document.getElementById('end-game').style.display = 'flex';
-      document.getElementById('game').style.display = 'none';
+      endGameSectionRef.style.display = 'flex';
+      gameSectionRef.style.display = 'none';
       return; 
   }
   questionCounter++;
@@ -78,15 +83,24 @@ const getNewQuestion = () => {
   takingAnswer = true;
 };
 
-finalScore.innerText = lastScore;
+/**
+ * Increment user score after correct answer
+ */
+const incrementScore = (num) => {
+  score += num;
+  scoreNumber[0].innerText = score;
+  localStorage.setItem('lastScore', score);
+};
 
-
-fetch(
+/**
+ * Fetch questions from opentdb api
+ */
+const fetchQuestion = () => {
+  fetch(
     'https://opentdb.com/api.php?amount=10&category=15&type=multiple'
-)
-    .then((result) => {
-        return result.json();
-    })
+  )
+    .then((result) => result.json())
+
     .then((loadedQuestions) => {
         questions = loadedQuestions.results.map((loadedQuestion) => {
             const changedQuestion = {
@@ -108,10 +122,12 @@ fetch(
         });
         startGame();
     })
-    .catch((err) => {
-        console.error(err);
-    });
+    .catch((err) => console.error(err));   
+  }
 
+fetchQuestion();
+
+// Checks if the answers are correct and adds the appropriate class
 
 choicesBox.forEach((choice) => {
     choice.addEventListener('click', (e) => {
@@ -137,11 +153,7 @@ choicesBox.forEach((choice) => {
     });
 });
 
-
-incrementScore = (num) => {
-    score += num;
-    scoreNumber[0].innerText = score;
-};
+finalScore.innerText = lastScore;
 
 scoresList.innerHTML = highScores
   .map(score => {
@@ -152,6 +164,8 @@ scoresList.innerHTML = highScores
 username.addEventListener('keyup', () => {
   submitButton.disabled = !username.value;
 });  
+
+// Save user name on scoreboard
 
 submitButton.addEventListener('click', (e) => {
     e.preventDefault();
@@ -167,35 +181,38 @@ submitButton.addEventListener('click', (e) => {
     window.location.assign('index.html');    
 });
 
-playButton.addEventListener('click', () => {
-    mainSection.style.display = 'none';
-    gameSection.style.display = 'flex';
+playButtonRef.addEventListener('click', () => {
+    mainSectionRef.style.display = 'none';
+    gameSectionRef.style.display = 'flex';
     startGame();
   });
-endGameButton.addEventListener('click', () => {    
-    gameSection.style.display = 'none';
-    endGameSection.style.display = 'flex';    
-    startGame();
+endGameButtonRef.addEventListener('click', () => {    
+    gameSectionRef.style.display = 'none';
+    endGameSectionRef.style.display = 'flex';
+    localStorage.removeItem('lastScore');        
+    startGame();    
   });
-playAgainButton.addEventListener('click', () => {    
-    endGameSection.style.display = 'none';
-    gameSection.style.display = 'flex';
-    startGame();        
+playAgainButtonRef.addEventListener('click', () => {    
+    endGameSectionRef.style.display = 'none';
+    gameSectionRef.style.display = 'flex';
+    localStorage.removeItem('lastScore');    
+    startGame();            
   });
-scoreButton.addEventListener('click', () => {
-    endGameSection.style.display = 'none';
-    mainSection.style.display = 'none';
-    gameSection.style.display = 'none';
-    scoreSection.style.display = 'flex';
+scoreButtonRef.addEventListener('click', () => {
+    endGameSectionRef.style.display = 'none';
+    mainSectionRef.style.display = 'none';
+    gameSectionRef.style.display = 'none';
+    scoreSectionRef.style.display = 'flex';
   });
-yourScoreButton.addEventListener('click', () => {
-    endGameSection.style.display = 'none';
-    mainSection.style.display = 'none';
-    gameSection.style.display = 'none';
-    scoreSection.style.display = 'flex';
+yourScoreButtonRef.addEventListener('click', () => {
+    endGameSectionRef.style.display = 'none';
+    mainSectionRef.style.display = 'none';
+    gameSectionRef.style.display = 'none';
+    scoreSectionRef.style.display = 'flex';
   });
-homeButton.addEventListener('click', () => {    
-    mainSection.style.display = 'flex';    
-    scoreSection.style.display = 'none';
-    startGame();
+homeButtonRef.addEventListener('click', () => {    
+    mainSectionRef.style.display = 'flex';    
+    scoreSectionRef.style.display = 'none';
+    localStorage.removeItem('lastScore');    
+    startGame();    
   });  
