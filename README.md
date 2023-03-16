@@ -66,36 +66,39 @@
 * #272d3b - This color will be used as borders
 * #ffffff - This color will be used as a text colour.
 * #464952 - This color will be used as a background behind website.
+
+![Colors](/doc/images/colorspalette%20.png)
+
 #### Structure
  The site will work on small and large screens. Everything will scale accordingly.
 ### Features
 #### Play button
  Button will start new game. You can play as many times as you want.
 
- ![play](/assets/images/playbutton.png)
+ ![play](/doc/images/playbutton.png)
 #### Question section
  Here you will find a question with four possible answers. Only one is correct. We choose the answer by clicking on it
 
- ![question](/assets/images/question.png)
+ ![question](/doc/images/question.png)
 #### Progress Bar
  It will contain a number of questions. We'll also know what question we're on.
  Also you will see your current score.
 
- ![progress](/assets/images/progressbar.png)
+ ![progress](/doc/images/progressbar.png)
 #### Your score
  You will be able to see the result of your quiz. Try to reach the maximum number of points. Home button will take you to main section.
 
- ![score](/assets/images/yourscore.png)
+ ![score](/doc/images/yourscore.png)
 
- ![scorelist](/assets/images/scoresection.png)
+ ![scorelist](/doc/images/scoresection.png)
 #### Footer 
  Located at the bottom of the page. You will find font awesome icons representing social media.
 
- ![footer](/assets/images/footer.png)
+ ![footer](/doc/images/footer.png)
 #### End Game Screen
  You will be able to see your final result. You will be able to put your name on the scoreboard
 
- ![endgame](/assets/images/endgame.png)
+ ![endgame](/doc/images/endgame.png)
 ### Tehnologies used
 #### Languages 
 * HTML - Used to design the basic website.
@@ -116,53 +119,53 @@
 I had no major problems with html. The code itself is not complicated, so it wasn't that difficult.
 I made a mistake adding href attribute to button. The W3 validator picked it up quickly. I removed unnecessary text and got rid of the error.
 
-![html Error](/assets/images/htmlvalidationerr.png)
+![html Error](/doc/images/htmlvalidationerr.png)
 
 After another test, I did not encounter any errors
 
-![html](/assets/images/htmlgood.png)
+![html](/doc/images/htmlgood.png)
 
 #### Css Validator
 With css it was very similar to html. Nothing complicated is included in it. The entire file seems to apply the style to the page well. The code is commented out for easier reading. Any changes can be made very quickly and easily.
 I did a lot of things by trial and error. Thanks to the first project, I achieved my goal very quickly.
 
-![Css](/assets/images/cssvalidation.png)
+![Css](/doc/images/cssvalidation.png)
 
 #### JSHint
 I had a lot of warnings in the beginning. Most of them had the same problem. When relying upon ECMAScript 6 features I need to inform the program so JSHint doesn't raise unnecessary warnings. I added a line of code to the beginning of the js file that fixed the warning. I found the answer on stack overflow. 
 
  /*jshint esversion: 6 */
 
-![js warnings](/assets/images/javascriptwarnings.png)
+![js warnings](/doc/images/javascriptwarnings.png)
 
 I had a missing semicolon. That was easy to fix by adding it in the right place.
 
-![js warnings](/assets/images/jshintwar.png)
+![js warnings](/doc/images/jshintwar.png)
 
 I got a warning that ['number'] is better written in dot notation. I also looked for a solution on stack overflow. The solution was as easy as in the previous case. I added lines of code and got rid of the warnings
 
-![jshint](/assets/images/jshintnowar.png)
+![jshint](/doc/images/jshintnowar.png)
 
 PageSpeed ​​Insights showed nothing alarming. I just had to add height and width to the logo image. This is the result.
 
-![page speed](/assets/images/pagespeed.png)
+![page speed](/doc/images/pagespeed.png)
 
 #### Manual Testing
 Just writing the function was a challenge for me. Most things were done by trial and error. One of the problems that took me a long time was the lack of answers displayed. They were undefined. 
 
-![err](/assets/images/answerundefined.png)
+![err](/doc/images/answerundefined.png)
 
 I changed the code in different ways. Nothing seemed to help. Eight hours later, with the help of google, I noticed that I forgot to add the data number in html. I managed to fix this error.
 
-![datanumber](/assets/images/datanumber.png)
+![datanumber](/doc/images/datanumber.png)
 
 Some characters in the question body were displayed incorrectly. I added text formatting. Thanks to tutorials on youtube, I dealt with the error and the questions are now displayed correctly.
 
-![datanumber](/assets/images/questiongood.png)
+![datanumber](/doc/images/questiongood.png)
 
 I had a problem with the wrong score displayed in the final score. The score was from the previous game. If this was your first game, the score field was blank. I was wondering what to do for a long time, until I finally noticed that the final score is not updated often enough. I added an update to the final score to the getNewQuestion function.
 
-![scorefix](/assets/images/scorefix.png)
+![scorefix](/doc/images/scorefix.png)
 
 I tested the game itself. There were a lot of tests, in different ways. Questions load correctly. The answers are also loading and only one answer is correct. Points for correct answers are calculated correctly. The question number changes according to the one you are currently on.
 
